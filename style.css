@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary-color: #af0276;
+  --border-radius: 5px;
+  --bg-padding: 20px;
+}
+* {
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}
+body {
+  background: #f5f4f4;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+header {
+  background: #125ca0;
+  padding: 10px 0;
+}
+header a {
+  color: white;
+  font-size: 17px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  padding: 10px;
+  border-radius: 5px;
+}
+header a:hover {
+  background: var(--primary-color);
+}
+header a img {
+  width: 15px;
+  margin-right: 5px;
+}
+.cc_form_wrap {
+  margin: 30px 0;
+}
+.cc_form_row {
+  row-gap: 30px;
+}
+.cc_form,
+.cc_info {
+  padding: 20px;
+  background: white;
+  background: #fff;
+  border-radius: calc(5px * 2);
+  box-shadow: rgba(0, 0, 0, 0.06) 1px 1px 0px 1px;
+  height: 100%;
+}
+.cc_heading {
+  background: var(--primary-color);
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  padding: 3px;
+  font-weight: 700;
+  white-space: nowrap;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.desktop-num {
+  border-radius: calc(5px - 1px) 0 0 calc(5px - 1px);
+  background: #fff;
+  color: var(--primary-color);
+  display: inline-flex;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.cc_heading > h2 {
+  padding: 0px 15px;
+  font-size: var(--heading-font-size);
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.4;
+}
+.cc_form .input-group {
+  margin-bottom: 14px;
+  position: relative;
+  /* flex-direction: column; */
+  display: block;
+}
+.cc_form .input-group input,
+.input-group select {
+  height: 46px;
+  width: 100% !important;
+  color: #495057;
+}
+.iti.iti--allow-dropdown {
+  width: 100%;
+}
+
+.card_area {
+  height: 46px;
+  width: 100%;
+  display: flex;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  position: relative;
+  padding: 0.375rem 0.75rem;
+  margin-bottom: 14px;
+}
+.card_area input {
+  width: 100%;
+  border: 0;
+  outline: none;
+}
+.cc_number {
+  padding-left: 20px;
+}
+.cc_date {
+  max-width: 100px;
+}
+.cc_cvc {
+  max-width: 65px;
+}
+.form-submit {
+  color: #fff;
+  background: var(--primary-color);
+  display: block;
+  width: 100%;
+  line-height: 2;
+  border-radius: 5px;
+  font-weight: 400;
+  border: 0;
+  font-size: 20px;
+}
+.packageDetails > li:first-child {
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  line-break: anywhere;
+}
+.packageDetails > li {
+  line-height: 1.6;
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 8px 20px;
+}
+.packageDetails > li > h5 {
+  margin: 0;
+  line-height: 1.6;
+}
+.coupon-div {
+  margin-top: var(--bg-padding);
+}
+.coupon-div .input-group .btn {
+  border-radius: 0 var(--bs-btn-border-radius) var(--bs-btn-border-radius) 0;
+}
+.complete {
+  padding: var(--bg-padding) 0;
+  border-top: 1px dashed #aaa;
+  margin-top: var(--bg-padding);
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.complete > img {
+  width: calc(50% - 5px);
+  max-width: 200px;
+}
+.coupon-div input,
+.coupon-div input:focus {
+  height: 100%;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.125) !important;
+}
+.error-input {
+  border: 1px solid red;
+  /* background-color: #ffe6e6; */
+}
+label.error-input {
+  background: transparent;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: red;
+}
